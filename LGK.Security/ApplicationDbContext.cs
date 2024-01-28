@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Security;
+namespace LGK.Security;
 
 public class ApplicationDbContext : DbContext
 {
