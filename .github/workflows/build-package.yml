@@ -28,3 +28,5 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Pack
       run: dotnet pack
+    - name: publish
+      run: dotnet nuget push "LGK.LIBRARY/bin/DEBUG/LGK.LIBRARY.1.0.0.nupkg"  --api-key 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 --source "github"
