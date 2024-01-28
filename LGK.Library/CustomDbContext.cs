@@ -6,6 +6,11 @@ namespace LGK.Library;
 public abstract class CustomDbContext : DbContext
 {
 
+    protected readonly string _dbName;
+    public CustomDbContext(string dbName)
+    {
+        _dbName = dbName;
+    }
     public CustomDbContext()
     {
     }
@@ -17,7 +22,7 @@ public abstract class CustomDbContext : DbContext
         connectionString.UserID = "sa";
         connectionString.Password = "SQLPWD=PWD";
         connectionString.TrustServerCertificate = true;
-        connectionString.InitialCatalog = "DB." +  StartupExtensions.GetAssemblyName();
+        connectionString.InitialCatalog = "LK.Gecko";
         options.UseSqlServer(connectionString.ConnectionString);
     }
 }

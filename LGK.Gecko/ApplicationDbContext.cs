@@ -7,7 +7,7 @@ namespace LGK.Gecko;
 public class ApplicationDbContext : CustomDbContext
 {
     public DbSet<User> User { get; set; }
-    public ApplicationDbContext()
+    public ApplicationDbContext() : base(StartupExtensions.GetAssemblyName())
     {
         
     }
