@@ -5,7 +5,7 @@
 namespace LGK.Geckos.Migrations
 {
     /// <inheritdoc />
-    public partial class init : Migration
+    public partial class addlp : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

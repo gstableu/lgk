@@ -1,4 +1,4 @@
-namespace LGK.Gecko;
+namespace LGK.Geckos;
 
 public class User
 {

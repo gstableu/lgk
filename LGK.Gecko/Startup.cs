@@ -1,8 +1,8 @@
-using LGK.Gecko;
+using LGK.Geckos;
 using LGK.Library;
 using Microsoft.EntityFrameworkCore;
 
-namespace LGK.Gecko
+namespace LGK.Geckos
 {
     public class Startup
     {
@@ -18,7 +18,10 @@ namespace LGK.Gecko
         public void ConfigureServices(IServiceCollection services)
         {
             string connectionString = Configuration.GetConnectionString("Default");
-            services.AddDbContext<ApplicationDbContext>();
+            services.AddDbContext<ApplicationDbContext>(opt => { 
+                opt.UseSqlServer(connectionString);
+            });
+            services.AddAutoMapper(typeof(Startup));
 
             services.AddMicroService();
         }

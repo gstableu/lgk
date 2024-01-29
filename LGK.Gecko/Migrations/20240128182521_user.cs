@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace LGK.Gecko.Migrations
+namespace LGK.Geckos.Migrations
 {
     /// <inheritdoc />
     public partial class user : Migration

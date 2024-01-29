@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace LGK.Gecko.Migrations
+namespace LGK.Geckos.Migrations
 {
     /// <inheritdoc />
     public partial class user2 : Migration

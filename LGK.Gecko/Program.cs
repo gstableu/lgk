@@ -1,8 +1,8 @@
 using System.Runtime.CompilerServices;
-using LGK.Gecko;
+using LGK.Geckos;
 using LGK.Library;
 
-namespace LGK.Gecko
+namespace LGK.Geckos
 {
     public class Program
     {
