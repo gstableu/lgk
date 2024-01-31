@@ -10,6 +10,11 @@ namespace LGK.Geckos.Models
         public string? Class { get; set; }
         public DateTime DateOfBirth { get; set; }
         public DateTime? DateOfIncubation { get; set; }
+
+    }
+    public class GeckoMorph : EntityBase
+    {
+        public Guid GeckoId { get; set; }
         public List<Morph>? Morph { get; set; }
 
     }

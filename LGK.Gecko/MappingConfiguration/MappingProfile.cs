@@ -10,6 +10,7 @@ namespace LGK.Geckos.MappingConfiguration
     {
         public MappingProfile(){
             CreateMap<GeckoViewModel, Gecko>();
+            CreateProjection<Gecko, GeckoViewModel>();
         }
     }
 }

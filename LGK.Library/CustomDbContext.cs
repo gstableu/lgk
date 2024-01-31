@@ -6,6 +6,7 @@ public abstract class CustomDbContext : DbContext
 {
     public CustomDbContext(DbContextOptions options) : base(options)
     {
+
     }
    
 }

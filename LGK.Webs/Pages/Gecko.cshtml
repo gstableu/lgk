@@ -1,0 +1,23 @@
+﻿@page
+@model LGK.Webs.Pages.GeckoModel
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Sire</th>
+            <th>Dam</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var d in Model.List) {
+        <tr>
+            <td>@d.Name</td>
+            <td>@d.SireName</td>
+            <td>@d.DamName</td>
+        </tr>
+        }
+    </tbody>
+</table>
+@{
+}

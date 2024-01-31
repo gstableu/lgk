@@ -81,11 +81,11 @@ public static class StartupExtensions
 
     public static void UseMicroServiceConfig(this IApplicationBuilder app, IWebHostEnvironment env)
     {
+        
         if (env.IsDevelopment())
         {
             app.UseDeveloperExceptionPage();
         }
-
         app.UseSwagger();
         app.UseSwaggerUI(c => c.SwaggerEndpoint("../swagger/v1/swagger.json", $"RMS Service {GetAssemblyName()}"));
 
